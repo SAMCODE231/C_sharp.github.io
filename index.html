@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>C-SharpTechnical Documentation Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav id="navbar">
+    <header>C# Tutorial</header>
+    <ul>
+      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+      <li><a class="nav-link" href="#C#_Get_Started">C# Get Started</a></li>
+      <li> <a class="nav-link" href="#C#_Syntax">C# Syntax</a></li>
+      <li> <a class="nav-link" href="#C#_Output">C# Output</a></li>
+      <li><a class="nav-link" href="#C#_Comments">C# Comments</a></li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <article>
+        <p>Learn what C# is and why it's used in software development. Get an overview of its history and its role in
+          the .NET ecosystem.</p>
+        <h2>What is C#?</h2>
+        <p>C# (pronounced "C sharp") is a modern, object-oriented programming language developed by Microsoft. It is a
+          versatile and powerful language that is widely used for developing a variety of software applications, ranging
+          from desktop applications to web applications, games, mobile apps, and more. C# is known for its simplicity,
+          strong type checking, and rich set of features, making it a popular choice among developers.</p>
+        <h2>Why Use C# in Software Development?</h2>
+        <p>C# offers several benefits that make it a preferred choice for software development:
+        <p>
+        <ul>
+          <li>Ease of Learning and Use: C# is designed to be approachable for both beginners and experienced
+            programmers. Its syntax is similar to other C-style languages, making it relatively easy to learn if you're
+            familiar with programming concepts.</li>
+          <li>Object-Oriented Programming (OOP): C# is built on the principles of OOP, allowing developers to create
+            well-organized, modular, and maintainable code. This makes it easier to manage complex projects.</li>
+          <li>Rich Standard Library: C# comes with a comprehensive standard library, known as the .NET Framework (or
+            .NET Core/.NET 5+ in recent versions), that provides a wide range of pre-built classes and functions for
+            common tasks like file I/O, networking, and more.</li>
+          <li>Cross-Platform Development: With the introduction of .NET Core (later evolved into .NET 5+), C# has become
+            more versatile, allowing developers to build applications that can run on various platforms, including
+            Windows, macOS, and Linux.</li>
+          <li>Integration with Microsoft Technologies: C# seamlessly integrates with various Microsoft technologies,
+            such as Windows Presentation Foundation (WPF), ASP.NET for web development, and Xamarin for mobile app
+            development.</li>
+          <li>Strong Type System: C# enforces strong typing, which helps catch errors at compile time and promotes code
+            reliability. It also supports type inference, making code more concise.</li>
+          <li>Memory Management: C# uses a garbage collector to automatically manage memory, reducing the risk of memory
+            leaks and manual memory management errors. </li>
+        </ul>
+        <h2>C# History and Role in the .NET Ecosystem</h2>
+        <p>C# was introduced by Microsoft in the early 2000s as part of its .NET initiative. The language was developed
+          with the intention of combining the power of C++ with the ease of use of Visual Basic. It was designed to be a
+          versatile language capable of addressing a wide range of development needs.</p>
+        <p>C# is a cornerstone of the .NET ecosystem, which includes various technologies like ASP.NET for web
+          development, Windows Presentation Foundation (WPF) for creating desktop applications, and Xamarin for
+          cross-platform mobile app development. Over the years, C# has evolved, introducing new language features,
+          performance improvements, and support for modern development paradigms.</p>
+        <p>With the introduction of open-source initiatives like .NET Core and later .NET 5+, C# has expanded its reach
+          to different platforms and development scenarios. It continues to play a vital role in Microsoft's vision for
+          building robust and scalable software applications.</p>
+        <p>In conclusion, C# is a versatile and widely-used programming language known for its simplicity, strong
+          typing, and integration with various Microsoft technologies. Its role in the .NET ecosystem has evolved over
+          time, making it a valuable tool for building a wide range of software applications.</p>
+      </article>
+    </section>
+    <section class="main-section" id="C#_Get_Started">
+      <header>C# Get Started</header>
+      <article>
+        <p>Get ready to start coding in C#! Set up your development environment, install the necessary tools, and write
+          your first "Hello, World!" program.</p>
+        <p>Let's write a simple "Hello, World!" program to test your setup:</p>
+        <h2> Using Visual Studio</h2>
+        <ul>
+          <li>Open Visual Studio.</li>
+          <li>Click "Create a new project."</li>
+          <li>Choose "Console App (.NET Core)" as the project template.</li>
+          <li>Name your project and choose a location to save it.</li>
+          <li>Click "Create."</li>
+        </ul>
+        <h2>Using Visual Studio Code:</h2>
+        <ul>
+          <li> Open Visual Studio Code.</li>
+          <li>Create a new folder for your project and navigate to it in the terminal.</li>
+          <li>Run the following command to create a new console app: dotnet new console -n HelloWorld</li>
+          <li>Navigate into the newly created folder: cd HelloWorld</li>
+        </ul>
+        <h2>Writing the Code:</h2>
+        <ul>
+          <li>In Visual Studio or Visual Studio Code, open the Program.cs file located in the Program folder.</li>
+          <li>Replace the existing code with the following:</li>
+        </ul>
+        <pre> <code>
+using System;
+
+namespace HelloWorld
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello, World!");
+        }
+    }
+}
+    </code></pre>
+        <h2>Running the Program:</h2>
+        <ul>
+          <li>In Visual Studio, press the "Start" button (usually a green triangle) to build and run the program.</li>
+          <li>In Visual Studio Code, open the terminal and navigate to your project folder. `Run dotnet` run to build
+            and execute the program</li>
+        </ul>
+        <p>You should see the output "Hello, World!" displayed in the console.</p>
+        <p>Congratulations! You've successfully set up your development environment, written your first C# program, and
+          executed it. This simple "Hello, World!" program serves as a foundation for more complex C# applications
+          you'll create in the future.</p>
+
+      </article>
+    </section>
+    <section class="main-section" id="C#_Syntax">
+      <header>C# Syntax</header>
+      <article>
+        <p>Understand the basic syntax rules of C# programming. Learn about statements, expressions, and code structure.
+        </p>
+        <p>Understanding the basic syntax rules of C# programming is essential for writing effective and readable code.
+          In this section, we'll cover key concepts such as statements, expressions, and the general structure of C#
+          code.</p>
+        <h2>Statements and Expressions</h2>
+        <p>Statements: In C#, statements are individual instructions that perform actions. They are typically terminated
+          by a semicolon (;). Examples of statements include variable declarations, assignments, method calls, loops,
+          and conditional statements.</p>
+        <pre> <code>
+           int x = 10; // Variable declaration and assignment
+Console.WriteLine("Hello, World!"); // Method call
+</code></pre>
+        <p><strong>Expressions:</strong> Expressions are combinations of operators, operands, and variables that produce
+          a value. They can be used within statements to perform calculations, make comparisons, and more.</p>
+        <pre><code>int sum = 5 + 3; // Expression that calculates sum
+bool isTrue = sum > 7; // Expression that evaluates a comparison
+</code></pre>
+      </article>
+    </section>
+    <section class="main-section" id="C#_Output">
+      <header>C# Output</header>
+      <article>
+        <p>Explore various ways to output information to the console or other output streams in C#. Print text and data
+          to the screen using different methods</p>
+        <p>Outputting information in C# is essential for communicating with users and displaying results. You can print
+          text and data to the screen using various methods and techniques. Let's explore some of the ways to achieve
+          this.</p>
+        <h2>Using Console.WriteLine()</h2>
+        <p>The `Console.WriteLine()` method is a common way to output text to the console. It adds a newline character
+          after the output.</p>
+        <pre> <code>
+          Console.WriteLine("Hello, World!");
+           </code></pre>
+        <p>You can also use placeholders to format output with variables:</p>
+        <pre>  <code>string name = "Alice";
+int age = 30;
+Console.WriteLine("Name: {0}, Age: {1}", name, age);
+</code></pre>
+        <h2>Using Console.Write()</h2>
+        <p>The Console.Write() method is similar to Console.WriteLine(), but it doesn't add a newline character. It's
+          useful when you want to print multiple items on the same line.</p>
+        <pre>   <code>Console.Write("Hello, ");
+Console.Write("World!");
+</code></pre>
+        <h2>Formatting Output</h2>
+        <p>You can use string interpolation to include variable values directly within a string:</p>
+        <pre> <code>string name = "Bob";
+Console.WriteLine($"Hello, {name}!");
+</code></pre>
+        <h2>Special Characters</h2>
+        <p>You can use escape sequences to display special characters:</p>
+        <pre> <code>Console.WriteLine("First line\nSecond line");
+Console.WriteLine("Tab:\tTabbed text");
+Console.WriteLine("Quote:\'Single quotes\'");
+       </code></pre>
+        <h2>Concatenation</h2>
+        <p>You can concatenate strings and variables using the `+` operator:</p>
+        <pre><code>string greeting = "Hello, ";
+string target = "You!";
+Console.WriteLine(greeting + target);
+</code></pre>
+        <h1>Using Composite Formatting</h1>
+        <p>You can use the String.Format() method to format output with placeholders:</p>
+        <pre>  <code>string name = "Eve";
+int score = 85;
+string message = String.Format("Player: {0}, Score: {1}", name, score);
+Console.WriteLine(message);
+</code></pre>
+        <h2>Using String Interpolation</h2>
+        <p>String interpolation simplifies output formatting:</p>
+        <pre> <code>double price = 19.99;
+Console.WriteLine($"The price is {price:C2}");
+</code></pre>
+        <h2>Output Streams</h2>
+        <p>Apart from the console, C# supports other output streams, such as files and network connections. You can use
+          the StreamWriter class to write to files:</p>
+        <pre>  <code>using System.IO;
+
+string filePath = "output.txt";
+using (StreamWriter writer = new StreamWriter(filePath))
+{
+    writer.WriteLine("This is written to a file.");
+}
+</code></pre>
+        <p>In summary, C# offers multiple ways to output information. Whether you're printing to the console, formatting
+          output, using different output methods, or working with files, understanding these techniques is crucial for
+          effective communication in your programs.</p>
+      </article>
+    </section>
+    <section class="main-section" id="C#_Comments">
+      <header>C# Comments</header>
+      <article>
+        <p>Discover how to add comments to your code. Comments are essential for making your code more understandable to
+          yourself and others.</p>
+        <p>Comments are an essential aspect of programming that help make your code more understandable to yourself and
+          others. They provide explanations, clarifications, and context for the code you write. Let's explore how to
+          add comments in C# and why they are crucial for effective code communication.</p>
+        <h2>Single-Line Comments</h2>
+        <p>Single-line comments are used to add explanations to a single line of code. Anything after `//` is considered
+          a comment and is ignored by the compiler.</p>
+        <pre><code>// This is a single-line comment
+int age = 25; // This variable stores the user's age
+</code></pre>
+        <h2>Multi-Line Comments</h2>
+        <p>Multi-line comments are used when you need to add explanations to multiple lines of code. Anything between
+          `/*` and `*/` is treated as a comment block.</p>
+        <pre> <code>/* This is a
+   multi-line comment
+   that spans multiple lines */
+int x = 10;
+int y = 20;
+</code></pre>
+        <h2>Documenting with XML Comments</h2>
+        <p>XML comments are a special type of comment used for documenting code, especially for generating documentation
+          using tools like Visual Studio's IntelliSense. They start with /// and can include descriptions, parameter
+          details, return values, and more.</p>
+        <pre> <code>/// <summary>
+/// This method calculates the sum of two integers.
+/// </summary>
+/// <param name="a">The first integer.</param>
+/// <param name="b">The second integer.</param>
+/// <returns>The sum of the two integers.</returns>
+int CalculateSum(int a, int b)
+{
+    return a + b;
+}
+</code></pre>
+
+        <h2>Importance of Comments</h2>
+        <ul>
+          <li> Code Understanding: Comments provide insights into the code's purpose, behavior, and logic, making it
+            easier for you and others to understand the code's intent.</li>
+
+          <li>Code Maintenance: Comments help when revisiting code after some time, ensuring that you can quickly
+            understand what each part does and make modifications confidently.</li>
+
+          <li>Collaboration: When working in a team, comments help other team members understand your code, leading to
+            smoother collaboration and code integration.</li>
+
+          <li>Documentation: Well-commented code can serve as living documentation, reducing the need for separate
+            documentation files and helping newcomers understand your codebase.</li>
+
+          <li>Debugging: Comments can highlight potential issues, reasons for specific decisions, or known bugs, aiding
+            in debugging and problem-solving.</li>
+        </ul>
+        <h2>Commenting Best Practices</h2>
+        <ul>
+          <li>Use clear and concise language.</li>
+          <li>Comment the why, not just the how. Explain the reasons behind decisions.</li>
+          <li>Avoid over-commenting obvious or self-explanatory code.</li>
+          <li>Update comments when code changes to keep them accurate.</li>
+          <li>Prioritize readability by using consistent formatting for comments.</li>
+        </ul>
+        <p>conclusion, comments play a vital role in making your code more understandable, maintainable, and
+          collaborative. By adding clear and meaningful comments, you enhance code quality and contribute to effective
+          software development.</p>
+
+      </article>
+    </section>
+  </main>
+</body>
+
+</html>
